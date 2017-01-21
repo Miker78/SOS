@@ -57,5 +57,5 @@ void loop() {
   digitalWrite(13, HIGH);  
   delay(250);              
   digitalWrite(13, LOW);
-  delay(2000);  
+  delay(10000);  
 }
