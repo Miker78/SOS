@@ -31,31 +31,29 @@ void loop() {
 }
 
 void morseS() {
+  for(int i = 1; i < 4; ++i) {
+    morseDah();
+  }
+}
+
+
+void morseO() {
+  for(int i = 1; i < 4; ++i) {
+    morseDit();
+  }
+}
+
+void morseDit() {
   digitalWrite(13, HIGH);  
   delay(250);              
   digitalWrite(13, LOW);    
-  delay(250);             
-  digitalWrite(13, HIGH);
-  delay(250);              
-  digitalWrite(13, LOW);
-  delay(250);
-  digitalWrite(13, HIGH);  
-  delay(250);              
-  digitalWrite(13, LOW);  
+  delay(250);    
+  
 }
 
-void morseO() {
+void morseDah() {
   digitalWrite(13, HIGH);  
   delay(1000);              
   digitalWrite(13, LOW);  
-  delay(500);             
-  digitalWrite(13, HIGH); 
-  delay(1000);            
-  digitalWrite(13, LOW); 
   delay(500);  
-  digitalWrite(13, HIGH); 
-  delay(1000);
-  digitalWrite(13, LOW); 
 }
-
-
