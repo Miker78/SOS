@@ -23,6 +23,14 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   // Flash SOS in morse code
+
+  morseS();
+  morseO();
+  morseS();
+  delay(10000);  
+}
+
+void morseS() {
   digitalWrite(13, HIGH);  
   delay(250);              
   digitalWrite(13, LOW);    
@@ -33,8 +41,10 @@ void loop() {
   delay(250);
   digitalWrite(13, HIGH);  
   delay(250);              
-  digitalWrite(13, LOW);
-  delay(1000);            
+  digitalWrite(13, LOW);  
+}
+
+void morseO() {
   digitalWrite(13, HIGH);  
   delay(1000);              
   digitalWrite(13, LOW);  
@@ -46,17 +56,6 @@ void loop() {
   digitalWrite(13, HIGH); 
   delay(1000);
   digitalWrite(13, LOW); 
-  delay(500);
-  digitalWrite(13, HIGH);  
-  delay(250);              
-  digitalWrite(13, LOW);    
-  delay(250);             
-  digitalWrite(13, HIGH);
-  delay(250);              
-  digitalWrite(13, LOW);
-  delay(250);
-  digitalWrite(13, HIGH);  
-  delay(250);              
-  digitalWrite(13, LOW);
-  delay(10000);  
 }
+
+
