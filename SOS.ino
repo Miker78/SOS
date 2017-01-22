@@ -22,6 +22,7 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
+  // Flash SOS in morse code
   digitalWrite(13, HIGH);  
   delay(250);              
   digitalWrite(13, LOW);    
