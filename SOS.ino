@@ -54,16 +54,17 @@ void morseO() {
 }
 
 void morseDit() {
-  digitalWrite(13, HIGH);
-  delay(DIT_DURATION);
-  digitalWrite(13, LOW);
-  delay(ELEMENT_PAUSE);
-
+  morseElement(DIT_DURATION);
 }
 
 void morseDah() {
+  morseElement(DASH_DURATION);
+}
+
+void morseElement(int duration) {
   digitalWrite(13, HIGH);
-  delay(DASH_DURATION);
+  delay(duration);
   digitalWrite(13, LOW);
   delay(ELEMENT_PAUSE);
 }
+
